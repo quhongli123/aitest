@@ -188,7 +188,6 @@ jobs:
           tag_name: v${{env.VERSION}}
           name: 'V2rayX v${{env.VERSION}}'
           body: 'More new features are now supported.'
-          token: ${{ secrets.GITHUB_TOKEN }}
           files: |
             src-tauri/target/${{ matrix.target }}/release/bundle/deb/*.deb
             src-tauri/target/${{ matrix.target }}/release/bundle/rpm/*.rpm
