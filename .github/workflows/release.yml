@@ -110,10 +110,10 @@ jobs:
         with:
           run_install: false
 
-      - name: Pnpm install and check
-        run: |
-          pnpm i
-          pnpm check ${{ matrix.target }}
+      # - name: Pnpm install and check
+      #   run: |
+      #     pnpm i
+      #     pnpm check ${{ matrix.target }}
 
       - name: Add SENTRY_DSN and VITE_UPDATER_ACTIVE to .env
         run: |
