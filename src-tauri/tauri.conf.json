@@ -3,12 +3,11 @@
   "productName": "AI 学院",
   "version": "0.1.0",
   "identifier": "cn.modelbest.aixueyuan",
-  "build": {
-    "frontendDist": "../dist",
-    "devUrl": "http://localhost:3000/",
-    "beforeDevCommand": "npm run dev",
-    "beforeBuildCommand": "npm run build"
-    
+   "build": {
+    "frontendDist": "../build/client",
+    "devUrl": "http://localhost:3000",
+    "beforeDevCommand": "pnpm web:dev",
+    "beforeBuildCommand": "pnpm web:build"
   },
   
   "app": {
