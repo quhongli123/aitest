@@ -1,0 +1,20 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
+  "identifier": "ai.shaonhuang",
+  "bundle": {
+    "targets": ["deb", "rpm"],
+    "linux": {
+      "deb": {
+        "desktopTemplate": "./packages/linux/ai.desktop"
+      },
+      "rpm": {
+        "desktopTemplate": "./packages/linux/ai.desktop"
+      }
+    }
+  },
+  "app": {
+    "trayIcon": {
+      "iconPath": "icons/icon.ico"
+    }
+  }
+}
